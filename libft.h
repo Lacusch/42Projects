@@ -6,7 +6,7 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 12:22:43 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/03/31 15:34:47 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/03/31 17:00:15 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
-//size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
-
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
+//fstrlcan is not workig
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_strchr(const char *s, int c);
