@@ -6,13 +6,11 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/25 13:46:01 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/03/31 10:29:47 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/03/31 10:45:19 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 int	ft_isprint(int c)
 {
-	return (c >= 33 && c <= 127);
+	return (c >= 32 && c <= 126);
 }
