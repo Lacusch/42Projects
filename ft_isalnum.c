@@ -6,11 +6,13 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 20:21:10 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/03/31 10:24:27 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/03/31 11:01:40 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// int	ft_isalnum(int c)
-// {
+#include "libft.h"
 
-// }
+int	ft_isalnum(int c)
+{
+	return (ft_isalpha(c) || ft_isdigit (c));
+}
