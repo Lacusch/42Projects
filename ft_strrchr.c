@@ -1,31 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/31 16:37:15 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/01 11:46:49 by slaszlo-         ###   ########.fr       */
+/*   Created: 2022/04/01 11:17:34 by slaszlo-          #+#    #+#             */
+/*   Updated: 2022/04/01 13:58:42 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
-{
-	size_t	i;
-	size_t	c;
-
-	i = ft_strlen(dst);
-	c = 0;
-	if (dstsize <= i)
-		return (dstsize + ft_strlen(src));
-	while (src[c] != '\0' && i + c + 1 < dstsize)
-	{
-		dst[i + c] = src[c];
-		c++;
-	}
-	dst[i + c] = '\0';
-	return (ft_strlen(dst) + ft_strlen(&src[c]));
-}
+// char	*ft_strrchr(const char *s, int c)
+// {
+// 	int i;
+// 	char *p;
+// 	i = 0;
+// 	while (s[i] != '\0')
+// 	{
+// 		if (s[i] = c)			
+// 	}
+// }
