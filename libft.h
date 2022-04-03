@@ -6,7 +6,7 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 12:22:43 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/03 17:21:02 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/04/03 18:04:49 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 void	*ft_memchr(const void *s, int c, size_t n);
-//memchr
-//memcmp
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+// memcmp is still not working, it doesn't work
 //strnstr
 //atoi
 
