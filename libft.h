@@ -6,7 +6,7 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 12:22:43 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/04 11:42:58 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/04/04 14:21:53 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,7 @@ char	*ft_strrchr(const char *s, int c);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
-//Not finished
-int		ft_atoi(const char *str);//atoi
+int		ft_atoi(const char *str);
 //Only prototype
 void	*ft_calloc(size_t count, size_t size);
 //Only prototype

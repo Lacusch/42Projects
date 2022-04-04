@@ -6,7 +6,7 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 10:56:24 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/04 11:39:28 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/04/04 14:21:09 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		return ((char *)haystack);
 	while (i < len)
 	{
-		if (haystack[0] == needle[0] && 0
-			== ft_memcmp(haystack, needle, needle_len))
+		if (0 == ft_memcmp(haystack, needle, needle_len)
+			&& len > i + needle_len)
 		{
 			return ((char *)haystack);
 		}
