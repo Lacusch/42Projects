@@ -6,7 +6,7 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 12:22:43 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/04 14:21:53 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/04/04 14:49:45 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ int		ft_atoi(const char *str);
 void	*ft_calloc(size_t count, size_t size);
 //Only prototype
 char	*ft_strdup(const char *s1);
-//Only prototype
 
 char	*ft_strjoin(char const	*s1, char const	*s2);
 
