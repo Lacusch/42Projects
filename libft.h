@@ -6,7 +6,7 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 12:22:43 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/04 17:07:49 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/04/04 17:27:47 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
-
+//Part 1 functions
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -37,10 +37,21 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_atoi(const char *str);
 //Only prototype
-
+//Malloc functions
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s1);
 
+//Part 2 functions
+//ft_substr
 char	*ft_strjoin(char const	*s1, char const	*s2);
+//ft_strtrim
+//ft_split
+//ft_itoa
+//ft_strmapi
+//ft_striteri
+//ft_putchar_fd
+//ft_putstr_fd
+//ft_putendl_fd
+//ft_putnbr_fd
 
 #endif
