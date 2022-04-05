@@ -6,7 +6,7 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 12:22:43 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/05 12:07:38 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/04/05 12:09:13 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s1);
 
 //Part 2 functions
-//ft_substr
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const	*s1, char const	*s2);
 //ft_strtrim
 //ft_split
