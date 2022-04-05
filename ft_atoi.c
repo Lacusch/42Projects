@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: slaszlo- <coder@slaszlo-@student.42heib    +#+  +:+       +#+        */
+/*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 09:04:25 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/05 09:04:29 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/04/05 11:53:42 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_atoi(char *str)
 	out = 0;
 	while ((str[c] >= '\t' && str[c] <= '\r') || str[c] == ' ')
 		c++;
-	while (str[c] == '+' || str[c] == '-')
+	if (str[c] == '+' || str[c] == '-')
 	{
 		if (str[c] == '-')
 			operator = -operator;
