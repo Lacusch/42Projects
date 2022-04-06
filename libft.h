@@ -6,7 +6,7 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 12:22:43 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/06 11:50:15 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/04/06 15:55:38 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,10 @@ char	*ft_strdup(const char *s1);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const	*s1, char const	*s2);
 char	*ft_strtrim(char const *s1, char const *set);
+// Splt prototype
 char	**ft_split(char const *s, char c);
-// Split prototype
-//ft_itoa
+//Itoa prototype
+char	*ft_itoa(int n);
 //ft_strmapi
 //ft_striteri
 //ft_putchar_fd

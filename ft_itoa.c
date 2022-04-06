@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/06 11:34:50 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/06 12:00:10 by slaszlo-         ###   ########.fr       */
+/*   Created: 2022/04/06 11:50:54 by slaszlo-          #+#    #+#             */
+/*   Updated: 2022/04/06 15:56:44 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include "libft.h"
 
-// char **ft_split(char const *s, char c)
+//  char	*ft_itoa(int n)
 // {
-// 	size_t	i;
-// 	size_t	d;
+// 	char	is_neg;
+// 	char	*str;
+// 	int		i;
+// 	char	*temp;
+
+// 	is_neg = 0;
 // 	i = 0;
-// 	d = 0;
-// 	while (!s[i])
+// 	if (n < 0)
+// 		is_neg = '-';
+// 	while (n != 0)
 // 	{
-// 		if (s[i] == c)
-// 		{
-// 			ft_array ()
-// 		}
-// 		i++;
+// 		temp
+// 		n % 10;
 // 	}
 // }
-// static char *ft_array ()
