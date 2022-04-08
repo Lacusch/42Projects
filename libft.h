@@ -6,7 +6,7 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 12:22:43 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/06 15:55:38 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/04/08 14:27:00 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,13 +46,11 @@ char	*ft_strjoin(char const	*s1, char const	*s2);
 char	*ft_strtrim(char const *s1, char const *set);
 // Splt prototype
 char	**ft_split(char const *s, char c);
-//Itoa prototype
 char	*ft_itoa(int n);
-//ft_strmapi
-//ft_striteri
-//ft_putchar_fd
-//ft_putstr_fd
-//ft_putendl_fd
-//ft_putnbr_fd
-
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void	t_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 #endif
