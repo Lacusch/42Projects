@@ -6,25 +6,35 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 11:34:50 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/06 12:00:10 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/04/12 14:15:17 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include "libft.h"
 
-// char **ft_split(char const *s, char c)
+// static	int	word_count(char const *s, char c)
 // {
-// 	size_t	i;
-// 	size_t	d;
+// 	int	i;
+// 	int	word_count;
+
 // 	i = 0;
-// 	d = 0;
-// 	while (!s[i])
+// 	word_count = 1;
+// 	while (s != '\0')
 // 	{
-// 		if (s[i] == c)
+// 		if (s == c)
 // 		{
-// 			ft_array ()
+// 			word_count++;
+// 			s++;
 // 		}
-// 		i++;
+// 		return (word_count);
 // 	}
 // }
-// static char *ft_array ()
+
+// char	**ft_split(char const *s, char c)
+// {
+// 	char **split_str;
+// 	if (s != NULL || split_str = malloc((word_count(s, c)
+// + 1 * sizeof(char *)))!= NULL);
+// 		return (NULL);
+
+// }
