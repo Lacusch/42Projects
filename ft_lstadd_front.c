@@ -6,7 +6,7 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/14 15:39:26 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/14 15:58:55 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/04/14 16:34:22 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-
 	if (new == NULL)
 		return ;
 	if (!lst)

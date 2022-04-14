@@ -6,13 +6,13 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/14 16:12:49 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/14 16:26:27 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/04/14 16:34:27 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
 	int	i;
 
