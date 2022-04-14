@@ -6,7 +6,7 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 11:34:50 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/13 16:31:38 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/04/14 13:38:11 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,18 @@
 
 static	int	word_count(char const *s, char c)
 {
-	int	i;
 	int	word_count;
+	int	i;
 
 	i = 0;
-	word_count = 0;
-	while (s != '\0')
+	word_count = 1;
+	while (s[i] != '\0')
 	{
-		if ((char)s == c)
+		if (s[i] == c && s[i + 1] != c)
 		{
 			word_count++;
-			s++;
 		}
+		i++;
 	}
 	return (word_count);
 }
@@ -36,48 +36,37 @@ static	char	*word_dub(char const *s, int start, int end)
 	int		i;
 
 	i = 0;
-	word = malloc(end - start + 2 * sizeof(char));
+	word = malloc((end - start + 1) * sizeof(char));
 	while (start < end)
-	{
-		word[i] = s[start];
-		i++;
-		s++;
-	}
+		word[i++] = s[start++];
 	word[i] = '\0';
 	return (word);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	int		i;
-	int		x;
-	int		y;
-	char	**split_str;
-	int		start;
+	size_t	i;
+	int		j;
+	int		str_start;
+	char	**spl_str;
 
-	start = 0;
-	x = 0;
-	y = 0;
-	i = 0;
-	split_str = malloc((word_count(s, c) + 1 * sizeof(char *)));
-	if (s == NULL || split_str != NULL)
+	spl_str = malloc((word_count(s, c) + 1) * sizeof(char *));
+	if (s == NULL || !spl_str)
 		return (NULL);
-	while (x < word_count(s, c))
+	i = 0;
+	j = 0;
+	str_start = -1;
+	while (i <= ft_strlen(s))
 	{
-		while (s[i] != c)
+		if (s[i] != c && str_start < 0)
+			str_start = i;
+		else if ((s[i] == c || i == ft_strlen(s)) && str_start >= 0)
 		{
-			i++;
+			spl_str[j++] = word_dub(s, str_start, i);
+			str_start = -1;
 		}
-		if (s[i] == c)
-		{
-			while (start < i)
-			{
-				split_str[x] = word_dub(s, start, i);
-				start = i + 1;
-			}
-			x++;
-		}
+		i++;
 	}
-	split_str[x] = NULL;
-	return (split_str);
+	spl_str[j] = 0;
+	return (spl_str);
 }
