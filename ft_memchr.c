@@ -6,7 +6,7 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 16:52:44 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/03 17:20:05 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/04/21 16:39:12 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if (str[i] == c)
+		if (str[i] == (char)c)
 		{
 			return ((void *)s + i);
 		}
