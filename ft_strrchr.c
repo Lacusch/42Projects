@@ -6,7 +6,7 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 11:17:34 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/03 16:49:40 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/04/21 16:44:48 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *s, int c)
 	p = 0;
 	while (s[i])
 	{
-		if (s[i] == c)
+		if (s[i] == (char)c)
 			p = (char *)(s + i);
 		i++;
 	}
