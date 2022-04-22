@@ -6,7 +6,7 @@
 /*   By: slaszlo- <slaszlo-@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 12:09:35 by slaszlo-          #+#    #+#             */
-/*   Updated: 2022/04/05 12:57:10 by slaszlo-         ###   ########.fr       */
+/*   Updated: 2022/04/21 19:11:19 by slaszlo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 
 	i = 0;
-	if (start > ft_strlen(s))
+	if (start >= ft_strlen(s))
 	{
 		p = malloc(1);
 		p[0] = '\0';
@@ -27,7 +27,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	p = malloc(len + 1);
 	if (p == NULL)
-		return (0);
+		return (NULL);
 	while (i < len)
 	{
 		p[i] = s[start + i];
